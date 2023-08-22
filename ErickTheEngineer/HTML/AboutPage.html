@@ -1,0 +1,80 @@
+<!-- About Page For ErickTheEngineer.com-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About - Erick the Engineer</title>
+  <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+</head>
+<body id="about-page">
+  <header>
+    <div class="logo-title">
+      <img src="../HTML/Images/namelogo.png" alt="Erick the Engineer Logo">
+      <h1>Erick the Engineer</h1>
+      <nav>
+        <ul>
+          <li><a href="HomePage.html">Home</a></li>
+          <li><a href="ServicesPage.html">Services</a></li>
+          <li><a href="AboutPage.html">About</a></li>
+          <li><a href="BlogPage.html">Blog</a></li>
+          <li><a href="ContactPage.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <button class="toggle-button" onclick="toggleSection('about')">About Me</button>
+      <div id="about" class="content hidden">
+        <div class="profile">
+          <img src="../HTML/Images/ErickP.jpg" alt="ErickTheEngineer">
+          <p id="professional_summary"></p>
+        </div>
+      </div>      
+    <div class="container">
+      <button class="toggle-button" onclick="toggleSection('experience')">Experience</button>
+      <div id="experience" class="content hidden">
+        <div id="experience"></div> <!-- Content will be inserted here by JavaScript -->
+      </div>
+      
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Erick the Engineer</p>
+    <nav>
+      <ul>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="ContactPage.html">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+  <script>
+    function toggleSection(id) {
+      var element = document.getElementById(id);
+      if (element.classList.contains('hidden')) {
+        element.classList.remove('hidden');
+      } else {
+        element.classList.add('hidden');
+      }
+    }
+
+    fetch('../HTML/Content/professional_summary.txt')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('professional_summary').innerHTML = data;
+  });
+
+  fetch('../HTML/Content/experience.txt')
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById('experience').innerHTML = data;
+  });
+
+  </script>
+
+</body>
+</html>
