@@ -339,3 +339,302 @@ main .container {
 .return-home a:hover {
     text-decoration: underline;
 }
+
+/* === Blog Page === */
+#blog-page h2 {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: #dddcdc;
+}
+
+.blog-listing {
+    border-bottom: 1px solid #ccc;
+    padding: 1.5rem 0;
+    margin: 0 1rem;
+}
+
+.blog-listing h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #003366;
+}
+
+.blog-listing .post-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.blog-listing .post-excerpt {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #dddcdc;
+    margin-bottom: 0.5rem;
+}
+
+.blog-listing .read-more {
+    font-weight: bold;
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.blog-listing .read-more:hover {
+    text-decoration: underline;
+}
+
+/* === Blog Post Page === */
+.blog-post {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    line-height: 1.7;
+    color: #333;
+}
+
+.blog-post h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #003366;
+}
+
+.blog-post .post-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.blog-post section p {
+    margin-bottom: 1rem;
+}
+
+/* Author tag / contact info */
+.author-tag {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-left: 4px solid #003366;
+}
+
+.author-tag p {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+.author-tag hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+
+.blog-post .author-tag {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    margin-top: 2rem;
+    border: 1px solid #003366;   /* full border instead of just left */
+    border-radius: 8px;          /* optional: rounds corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* === Blog Page Background & Text Override === */
+#blog-page, 
+#blog-post {
+    background-color: #ffffff; /* White background */
+    color: #222222; /* Dark gray text for readability */
+}
+
+/* Blog content readability */
+.blog-post, .blog-listing {
+    background-color: #ffffff;
+    color: #222222;
+}
+
+/* Paragraphs inside blog posts */
+.blog-post p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #222; /* Dark text */
+}
+
+/* Links inside blog posts */
+.blog-post a {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.blog-post a:hover {
+    color: #003366;
+}
+
+/* === Research Page Styling === */
+#research-page {
+    background-color: #ffffff;
+    color: #222222;
+    min-height: 100vh;
+}
+
+#research-page main {
+    padding: 2rem;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#research-page h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #f1f4f7;
+}
+
+/* Each research paper as a card */
+.research-listing {
+    background-color: rgba(240, 240, 240, 0.95); /* Light card background */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.research-listing:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.research-listing h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #003366;
+}
+
+.research-listing .research-date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.research-listing .research-excerpt {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.research-listing .view-paper {
+    display: inline-block;
+    background-color: #ff0000;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.research-listing .view-paper:hover {
+    background-color: #cc0000;
+}
+
+/* Responsive */
+@media only screen and (max-width: 768px) {
+    #research-page main {
+        width: 95%;
+    }
+    .research-listing {
+        padding: 15px;
+    }
+}
+
+/* === Skills Page Styling === */
+#services-page, #skills-page {
+    background-color: #ffffff;
+    color: #f8f3f3;
+    min-height: 100vh;
+}
+
+#services-page main, #skills-page main {
+    padding: 2rem;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#services-page h2, #skills-page h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: #81b3e4;
+}
+
+/* Container for all skill cards */
+#skills-page main {
+    display: flex;
+    flex-wrap: wrap;          /* wrap cards to next line if needed */
+    gap: 2rem;                /* space between cards */
+    justify-content: center;  /* center cards horizontally */
+    padding: 2rem 1rem;
+    align-items: flex-start;  /* cards align to top, height flexible */
+    max-width: 1200px;        /* optional: limit total width of all cards */
+    margin: 0 auto;           /* center the container on the page */
+}
+
+/* Each skill section as a card */
+.skill-card {
+    background-color: rgba(240, 240, 240, 0.95);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    width: 850px;             /* wider cards */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* content determines height */
+}
+
+.skill-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.skill-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #003366;
+}
+
+.skill-card ul {
+    margin-left: 20px;
+    list-style-type: disc;
+    color: #333;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+    .skill-card {
+        width: 45%;  /* two cards per row on medium screens */
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #skills-page main {
+        flex-direction: column;
+        width: 95%;
+        align-items: center;
+    }
+    .skill-card {
+        width: 90%; /* full width on mobile */
+        padding: 15px;
+    }
+}
+

@@ -1,7 +1,7 @@
 <ul>
-  <li>Mechanical Design Engineer (2018 - 2021): Developed and implemented engineering designs, contributing to successful project completions.</li>
-  <li>Project Engineer (2021 - 2023): Managed and coordinated multiple engineering projects, ensuring timely and cost-effective deliveries.</li>
   <li>Applications Engineer (2023 - Present): Leveraged programming skills and engineering knowledge to develop innovative automation solutions.</li>
+  <li>Project Engineer (2021 - 2023): Managed and coordinated multiple engineering projects, ensuring timely and cost-effective deliveries.</li>
+  <li>Mechanical Design Engineer (2018 - 2021): Developed and implemented engineering designs, contributing to successful project completions.</li>
   <li>Proficient in coding and designing: Passionate about exploring creativity and pushing the boundaries of what is possible in engineering.</li>
   <li>Commitment to continuous learning: Eager to adapt to new technologies and stay updated with the latest advancements in the aerospace and automation industries.</li>
 </ul>
